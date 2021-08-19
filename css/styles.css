@@ -5,7 +5,86 @@ Global styles
 */
 
 body{
+    background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+img{
+    display: block;
+}
+
+button{
+    display: block;
+}
+
+/* 
+=================
+Fonts/Colors
+=================
+*/
+
+h1{
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h1,h2{
+    font-weight: 900;
+}
+
+a{
+    font-size: .86rem;
+    color: #695CD7;
+}
+
+a, .order__button{
+    font-weight: 700;
+}
+
+.heading{
+    color: hsl(223, 47%, 23%);
+}
+
+.text{
+    color: hsl(224, 23%, 55%);
+}
+
+.order__button{
+    font-size: .9rem;
+    color: #fff;
+}
+
+.order__button--cancel{
+    color: hsl(224, 23%, 43%);
+}
+
+/* 
+=================
+Layout
+=================
+*/
+
+.order{
+    background-color: #fff;
+}
+
+.order__plan{
+    background-color: hsl(225, 100%, 98%);
+}
+
+.order__button{
+    background-color: hsl(245, 75%, 52%);
+    border: 1px solid hsl(223, 47%, 23%);
+}
+
+.order__button--cancel{
+    background-color: transparent;
+    border: none;
 }
 
 /* 
@@ -18,5 +97,7 @@ Attribution
     font-size: 11px; text-align: center;
 }
 .attribution a {
+    font-size: 11px;
+    font-weight: 500;
     color: hsl(228, 45%, 44%);
 }
