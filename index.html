@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+
+  <title>Frontend Mentor | Order summary order</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
 
-  Order Summary
+  <!-- 
+================
+Background
+================
+-->
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  <img srcset="./images/pattern-background-desktop.svg 1440w, ./images/pattern-background-mobile.svg 375w" src="./images/pattern-background-mobile.svg 375w" alt="Background pattern"
+    class="bg-pattern">
 
-  Annual Plan
-  $59.99/year
+  <!-- 
+================
+Main Content
+================
+-->
 
-  Change
+  <div class="order">
 
-  Proceed to Payment
-  Cancel Order
-  
+    <h1 class="order__title heading">Order Summary</h1>
+    <p class="order__info text">You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!</p>
+    <div class="order__plan">
+      <div class="plan__info">
+        <h2 class="plan__info__title heading">Annual Plan</h2>
+        <p class="plan__info__price text">$59.99/year</p>
+      </div> <!-- plan__info -->
+      <p><a href="#" class="plan__change">Change</a></p>
+      <img src="./images/icon-music.svg" alt="music icon" class="plan__icon">
+    </div> <!-- plan -->
+    <button class="order__button">Proceed to Payment</button>
+    <button class="order__button order__button--cancel">Cancel Order</button>
+    <img src="./images/illustration-hero.svg" alt="Hero illustration" class="order__illustration">
+
+  </div> <!-- order -->
+
+  <!-- 
+================
+Attribution
+================
+-->
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
 </body>
+
 </html>
