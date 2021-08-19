@@ -26,7 +26,7 @@ Fonts/Colors
 */
 
 h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 h2{
@@ -54,13 +54,17 @@ a, .order__button{
     color: hsl(224, 23%, 55%);
 }
 
+.plan__info__price{
+    font-size: .924rem;
+}
+
 .order__button{
-    font-size: .9rem;
+    font-size: 1rem;
     color: #fff;
 }
 
 .order__button--cancel{
-    color: hsl(224, 23%, 43%);
+    color: hsl(224, 23%, 55%);
 }
 
 /* 
@@ -69,22 +73,102 @@ Layout
 =================
 */
 
+.bg-pattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.flex{
+    display: flex;
+} /* .order, .order__plan, plan icon and info div */
+
 .order{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    /* max-width: 500px; */
     background-color: #fff;
+    text-align: center;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.order__illustration{
+    order: 1;
+    width: 100%;
+}
+
+.order__title{
+    order: 2;
+    margin: 1.5em 0 1em;
+}
+
+.order__info{
+    order: 3;
+    margin: 0 1.7em 1.5em;
+    line-height: 1.7em;
 }
 
 .order__plan{
+    order: 4;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+    padding: 1em;
     background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+}
+
+
+.plan__icon{
+    order: 1;
+}
+
+.plan__info{
+    order: 2;
+    margin-left: 1em;
+}
+
+.plan__change{
+    order: 3;
+    margin-left: 2.03em;
+}
+
+.plan__info__title, 
+.plan__info__price{
+    margin: 0;
+}
+
+.plan__info__title{
+    margin-bottom: .25em;
+}
+
+.order__plan, 
+.order__button{
+    width: 85%;
 }
 
 .order__button{
-    background-color: hsl(245, 75%, 52%);
+    order: 5;
+    margin-bottom: 1em;
+    padding: 1.2em;
     border: 1px solid hsl(223, 47%, 23%);
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 1.2em 20px 5px hsl(245, 75%, 93%);
 }
 
 .order__button--cancel{
     background-color: transparent;
     border: none;
+    box-shadow: none;
 }
 
 /* 
@@ -94,6 +178,10 @@ Attribution
 */
 
 .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     font-size: 11px; text-align: center;
 }
 .attribution a {

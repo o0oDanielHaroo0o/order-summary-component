@@ -27,8 +27,8 @@ Background
 ================
 -->
 
-  <img srcset="./images/pattern-background-desktop.svg 1440w, ./images/pattern-background-mobile.svg 375w" src="./images/pattern-background-mobile.svg 375w" alt="Background pattern"
-    class="bg-pattern">
+  <img srcset="./images/pattern-background-desktop.svg 1440w, ./images/pattern-background-mobile.svg 375w"
+    src="./images/pattern-background-mobile.svg 375w" alt="Background pattern" class="bg-pattern">
 
   <!-- 
 ================
@@ -36,18 +36,20 @@ Main Content
 ================
 -->
 
-  <div class="order">
+  <div class="order flex">
 
     <h1 class="order__title heading">Order Summary</h1>
     <p class="order__info text">You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!</p>
-    <div class="order__plan">
-      <div class="plan__info">
-        <h2 class="plan__info__title heading">Annual Plan</h2>
-        <p class="plan__info__price text">$59.99/year</p>
-      </div> <!-- plan__info -->
-      <p><a href="#" class="plan__change">Change</a></p>
-      <img src="./images/icon-music.svg" alt="music icon" class="plan__icon">
+    <div class="order__plan flex">
+      <div class="flex">
+        <div class="plan__info">
+          <h2 class="plan__info__title heading">Annual Plan</h2>
+          <p class="plan__info__price text">$59.99/year</p>
+        </div> <!-- plan__info -->
+        <img src="./images/icon-music.svg" alt="music icon" class="plan__icon">
+      </div> <!-- plan icon and info container -->
+      <p class="plan__change"><a href="#">Change</a></p>
     </div> <!-- plan -->
     <button class="order__button">Proceed to Payment</button>
     <button class="order__button order__button--cancel">Cancel Order</button>
@@ -62,7 +64,7 @@ Attribution
 -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/o0oDanielHaroo0o" target="_blank">Daniel Haro</a>.
   </div>
 
 </body>
