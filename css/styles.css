@@ -4,19 +4,24 @@ Global styles
 =================
 */
 
-body{
-    background-color: hsl(225, 100%, 94%);
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-img{
-    display: block;
+img {
+  display: block;
 }
 
-button{
-    display: block;
+button {
+  display: block;
 }
 
 /* 
@@ -25,46 +30,48 @@ Fonts/Colors
 =================
 */
 
-h1{
-    font-size: 1.5rem;
+h1 {
+  font-size: 1.5rem;
 }
 
-h2{
-    font-size: 1rem;
+h2 {
+  font-size: 1rem;
 }
 
-h1,h2{
-    font-weight: 900;
+h1,
+h2 {
+  font-weight: 900;
 }
 
-a{
-    font-size: .86rem;
-    color: #695CD7;
+a {
+  font-size: 0.86rem;
+  color: #695cd7;
 }
 
-a, .order__button{
-    font-weight: 700;
+a,
+.order__button {
+  font-weight: 700;
 }
 
-.heading{
-    color: hsl(223, 47%, 23%);
+.heading {
+  color: hsl(223, 47%, 23%);
 }
 
-.text{
-    color: hsl(224, 23%, 55%);
+.text {
+  color: hsl(224, 23%, 55%);
 }
 
-.plan__info__price{
-    font-size: .924rem;
+.plan__info__price {
+  font-size: 0.924rem;
 }
 
-.order__button{
-    font-size: 1rem;
-    color: #fff;
+.order__button {
+  font-size: 1rem;
+  color: #fff;
 }
 
-.order__button--cancel{
-    color: hsl(224, 23%, 55%);
+.order__button--cancel {
+  color: hsl(224, 23%, 55%);
 }
 
 /* 
@@ -73,102 +80,98 @@ Layout
 =================
 */
 
-.bg-pattern{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
+.bg-pattern {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 } /* .order, .order__plan, plan icon and info div */
 
-.order{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
-    /* max-width: 500px; */
-    background-color: #fff;
-    text-align: center;
-    border-radius: 18px;
-    overflow: hidden;
+.order {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  /* max-width: 500px; */
+  background-color: #fff;
+  text-align: center;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
-.order__illustration{
-    order: 1;
-    width: 100%;
+.order__illustration {
+  order: 1;
+  width: 100%;
 }
 
-.order__title{
-    order: 2;
-    margin: 1.5em 0 1em;
+.order__title {
+  order: 2;
+  margin: 1.5em 0 1em;
 }
 
-.order__info{
-    order: 3;
-    margin: 0 1.7em 1.5em;
-    line-height: 1.7em;
+.order__info {
+  order: 3;
+  margin: 0 1.7em 1.5em;
+  line-height: 1.7em;
 }
 
-.order__plan{
-    order: 4;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    background-color: hsl(225, 100%, 98%);
-    border-radius: 12px;
+.order__plan {
+  order: 4;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
 }
 
-
-.plan__icon{
-    order: 1;
+.plan__icon {
+  order: 1;
 }
 
-.plan__info{
-    order: 2;
-    margin-left: 1em;
+.plan__info {
+  order: 2;
+  margin-left: 1em;
 }
 
-.plan__change{
-    order: 3;
-    margin-left: 2.03em;
+.plan__change {
+  order: 3;
+  margin-left: 2.03em;
 }
 
-.plan__info__title, 
-.plan__info__price{
-    margin: 0;
+.plan__info__title,
+.plan__info__price {
+  margin: 0;
 }
 
-.plan__info__title{
-    margin-bottom: .25em;
+.plan__info__title {
+  margin-bottom: 0.25em;
 }
 
-.order__plan, 
-.order__button{
-    width: 85%;
+.order__plan,
+.order__button {
+  width: 85%;
 }
 
-.order__button{
-    order: 5;
-    margin-bottom: 1em;
-    padding: 1.2em;
-    border: 1px solid hsl(223, 47%, 23%);
-    border-radius: 10px;
-    background-color: hsl(245, 75%, 52%);
-    box-shadow: 0 1.2em 20px 5px hsl(245, 75%, 93%);
+.order__button {
+  order: 5;
+  margin-bottom: 1em;
+  padding: 1.2em;
+  border: 1px solid hsl(223, 47%, 23%);
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 1.2em 20px 5px hsl(245, 75%, 93%);
 }
 
-.order__button--cancel{
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+.order__button--cancel {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 /* 
@@ -178,14 +181,11 @@ Attribution
 */
 
 .attribution {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
-    font-size: 11px;
-    font-weight: 500;
-    color: hsl(228, 45%, 44%);
+  font-size: 11px;
+  font-weight: 500;
+  color: hsl(228, 45%, 44%);
 }
